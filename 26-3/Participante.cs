@@ -11,8 +11,14 @@ namespace _26_3
         public int NroParticipante { get; set; }
         public string Nombre { get; set; }
         public string Apellido { get; set; }
-        public int Tiempo { get; set; }
+        public double Tiempo { get; set; }
         public int Altura { get; set; }
-        public int Categoria { get; set; }
+        public string Categoria { get; set; }
+
+        public Participante(int Nro)
+        {
+            this.NroParticipante = Nro;
+            this.Categoria = "Sin Categoria";
+        }
     }
 }
